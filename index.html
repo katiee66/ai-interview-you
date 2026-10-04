@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CHAN JING BOON — Sales & Marketing Executive / Student Support. Experience across sales, marketing, customer service, recruitment, and digital content.">
+  <meta property="og:title" content="CHAN JING BOON — Sales & Marketing">
+  <meta property="og:description" content="Sales, marketing, customer service, recruitment, and digital content experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CHAN JING BOON — Sales & Marketing">
+  <meta name="twitter:description" content="Sales, marketing, customer service, recruitment, and digital content experience.">
+  <!-- Add og:image later: 1200x630 PNG matching dark theme -->
+
+  <title>CHAN JING BOON — Sales & Marketing</title>
+
+  <script>
+    (function () {
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved === "light") document.documentElement.classList.add("light");
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E%F0%9F%92%BC%3C/text%3E%3C/svg%3E"
+  >
+
+  <style>
+    :root {
+      --bg: #020a18;
+      --bg-grad: linear-gradient(170deg, #020a18 0%, #041028 40%, #06142e 70%, #020a18 100%);
+      --surface: rgba(8,24,56,0.85);
+      --border: rgba(0,170,255,0.12);
+      --border-glow: rgba(0,170,255,0.3);
+      --text: #d0e0f0;
+      --text-bright: #e8f0ff;
+      --text-dim: #6888aa;
+      --neon: #00aaff;
+      --cyan: #00e5ff;
+      --green: #00ff88;
+      --amber: #ffaa00;
+      --red: #ff4466;
+      --purple: #aa66ff;
+      --header: rgba(2,10,24,0.72);
+      --grid: rgba(0,170,255,0.035);
+      --orb-opacity: 0.08;
+      --shadow: rgba(0,0,0,0.35);
+    }
+
+    html.light {
+      --bg: #eaf2fb;
+      --bg-grad: linear-gradient(170deg, #edf5fd 0%, #dcebf9 40%, #d3e6f7 70%, #eef5fb 100%);
+      --surface: rgba(255,255,255,0.88);
+      --border: rgba(0,100,180,0.16);
+      --border-glow: rgba(0,130,210,0.28);
+      --text: #23384d;
+      --text-bright: #0c2138;
+      --text-dim: #58728c;
+      --neon: #0077b6;
+      --cyan: #008ca8;
+      --green: #008f5a;
+      --amber: #a86600;
+      --red: #c52f4d;
+      --purple: #7041b5;
+      --header: rgba(239,247,253,0.78);
+      --grid: rgba(0,100,180,0.055);
+      --orb-opacity: 0.07;
+      --shadow: rgba(30,70,100,0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg-grad);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(to right, var(--grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .orb {
+      position: fixed;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: var(--orb-opacity);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .orb.one {
+      background: var(--neon);
+      top: 8%;
+      left: -250px;
+      animation: orbitOne 24s ease-in-out infinite alternate;
+    }
+
+    .orb.two {
+      background: var(--purple);
+      top: 42%;
+      right: -260px;
+      animation: orbitTwo 29s ease-in-out infinite alternate;
+    }
+
+    .orb.three {
+      background: var(--cyan);
+      bottom: -260px;
+      left: 42%;
+      animation: orbitThree 32s ease-in-out infinite alternate;
+    }
+
+    @keyframes orbitOne {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(180px, 130px, 0); }
+    }
+
+    @keyframes orbitTwo {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-170px, -120px, 0); }
+    }
+
+    @keyframes orbitThree {
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(-130px, -160px, 0); }
+    }
+
+    a {
+      color: var(--neon);
+      text-decoration: none;
+      transition: color .2s ease, text-shadow .2s ease;
+    }
+
+    a:hover {
+      color: var(--cyan);
+      text-shadow: 0 0 14px rgba(0,229,255,.28);
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: var(--header);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      min-height: 68px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .header-name {
+      color: var(--text-bright);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-button {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      transition:
+        transform .2s ease,
+        color .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+    }
+
+    .icon-button:hover {
+      color: var(--cyan);
+      border-color: var(--border-glow);
+      box-shadow: 0 0 20px rgba(0,170,255,.12);
+      transform: translateY(-1px);
+    }
+
+    .icon-button svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .moon-icon { display: block; }
+    .sun-icon { display: none; }
+
+    html.light .moon-icon { display: none; }
+    html.light .sun-icon { display: block; }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 20px 48px;
+    }
+
+    .hero {
+      padding: 100px 0 78px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--neon);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+      color: var(--text-bright);
+      font-size: clamp(44px, 9vw, 78px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      font-weight: 800;
+    }
+
+    .role {
+      margin: 18px 0 0;
+      color: var(--cyan);
+      font-size: clamp(17px, 3vw, 22px);
+      font-weight: 600;
+    }
+
+    .hero-statement {
+      max-width: 780px;
+      margin: 30px 0 34px;
+      color: var(--text-bright);
+      font-size: clamp(23px, 4vw, 34px);
+      line-height: 1.28;
+      letter-spacing: -.025em;
+      font-weight: 600;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border: 1px solid rgba(0,170,255,.42);
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(0,170,255,.18), rgba(0,229,255,.07));
+      color: var(--text-bright);
+      font-weight: 700;
+      box-shadow: 0 0 26px rgba(0,170,255,.08);
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .cta:hover {
+      color: var(--text-bright);
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(0,170,255,.18);
+      text-shadow: none;
+    }
+
+    .cta svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .sections {
+      padding-top: 28px;
+    }
+
+    .section {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-toggle {
+      width: 100%;
+      padding: 24px 0;
+      border: 0;
+      background: transparent;
+      color: var(--text-bright);
+      display: grid;
+      grid-template-columns: 42px 1fr 32px;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .section-number {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border-glow);
+      border-radius: 50%;
+      color: var(--neon);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -.015em;
+    }
+
+    .toggle-symbol {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      color: var(--text-dim);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .section-body {
+      display: grid;
+      grid-template-rows: 1fr;
+      transition: grid-template-rows .35s ease, opacity .25s ease;
+      opacity: 1;
+    }
+
+    .section-body-inner {
+      min-height: 0;
+      overflow: hidden;
+      padding: 0 0 28px 58px;
+    }
+
+    .section.collapsed .section-body {
+      grid-template-rows: 0fr;
+      opacity: 0;
+    }
+
+    .section.collapsed .section-body-inner {
+      padding-bottom: 0;
+    }
+
+    .section.collapsed .toggle-symbol {
+      color: var(--text-dim);
+    }
+
+    .section-body p {
+      margin: 0 0 16px;
+    }
+
+    .section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-body ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .section-body li {
+      margin: 0 0 13px;
+      padding-left: 5px;
+    }
+
+    .section-body li:last-child {
+      margin-bottom: 0;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .metric {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(8,24,56,.38);
+    }
+
+    html.light .metric {
+      background: rgba(255,255,255,.48);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 25px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .metric span {
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      padding: 7px 11px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(8,24,56,.35);
+      font-size: 13px;
+    }
+
+    html.light .skill {
+      background: rgba(255,255,255,.48);
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 24px 20px 34px;
+      color: var(--text-dim);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        min-height: 62px;
+      }
+
+      .hero {
+        padding: 72px 0 58px;
+      }
+
+      .hero h1 {
+        font-size: clamp(42px, 15vw, 64px);
+      }
+
+      .section-toggle {
+        grid-template-columns: 38px 1fr 30px;
+        gap: 12px;
+      }
+
+      .section-body-inner {
+        padding-left: 50px;
+      }
+
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="orb one" aria-hidden="true"></div>
+  <div class="orb two" aria-hidden="true"></div>
+  <div class="orb three" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-name">CHAN JING BOON</div>
+
+      <div class="header-actions">
+        <button
+          class="icon-button"
+          id="themeToggle"
+          type="button"
+          title="Toggle light and dark mode"
+          aria-label="Toggle light and dark mode"
+        >
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 15.4A8.5 8.5 0 0 1 8.6 3.5 8.5 8.5 0 1 0 20.5 15.4Z"></path>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
+        <button
+          class="icon-button"
+          id="collapseToggle"
+          type="button"
+          title="Collapse all sections"
+          aria-label="Collapse all sections"
+          aria-pressed="false"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 7h12M4 7h.01M8 12h12M4 12h.01M8 17h12M4 17h.01"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Sales &amp; Marketing</p>
+      <h1>CHAN JING BOON</h1>
+      <p class="role">Sales &amp; Marketing Executive / Student Support</p>
+
+      <p class="hero-statement">
+        I bring sales, marketing, customer service, recruitment, and digital content experience together to create useful connections and practical solutions.
+      </p>
+
+      <a class="cta" href="mailto:jingwen2662@gmail.com">
+        Collaborate with me
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h13M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+    </section>
+
+    <div class="sections">
+      <section class="section" data-section>
+        <button class="section-toggle" type="button" aria-expanded="true">
+          <span class="section-number">01</span>
+          <span class="section-title">Sales &amp; Marketing</span>
+          <span class="toggle-symbol">−</span>
+        </button>
+
+        <div class="section-body">
+          <div class="section-body-inner">
+            <ul>
+              <li>Promoting working &amp; study programmes and General English/TESOL courses to countries outside Ireland eg: Malaysia, China, Taiwan, SG, Frances, Spain, Mexico, Brazil etc.</li>
+              <li>Assisted and recruited &gt;60 students from all around the world to pursue a working study holiday life.</li>
+              <li>Accomplished &gt; RM70k sales within 3 months.</li>
+            </ul>
+
+            <div class="metric-grid" style="margin-top:24px;">
+              <div class="metric">
+                <strong>&gt;60</strong>
+                <span>students recruited and assisted</span>
+              </div>
+              <div class="metric">
+                <strong>&gt;RM70k</strong>
+                <span>sales accomplished within 3 months</span>
+              </div>
+              <div class="metric">
+                <strong>Global</strong>
+                <span>markets across Asia, Europe and beyond</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-section>
+        <button class="section-toggle" type="button" aria-expanded="true">
+          <span class="section-number">02</span>
+          <span class="section-title">Recruitment &amp; Student Support</span>
+          <span class="toggle-symbol">−</span>
+        </button>
+
+        <div class="section-body">
+          <div class="section-body-inner">
+            <ul>
+              <li>Managed appointments and conducted mock interviews &gt;600 candidates and successfully assisted &gt;100 candidates to get positions in their field of interest.</li>
+              <li>Providing detailed written and verbal feedback and identifying potential paths for additional development.</li>
+              <li>Assisted students with visa processes, Ireland resident permits, student transportation cards, bank registration and related support.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-section>
+        <button class="section-toggle" type="button" aria-expanded="true">
+          <span class="section-number">03</span>
+          <span class="section-title">Digital Marketing &amp; Content</span>
+          <span class="toggle-symbol">−</span>
+        </button>
+
+        <div class="section-body">
+          <div class="section-body-inner">
+            <ul>
+              <li>Created digital marketing materials including restaurant menus, promotional posters, short-form video content using Canva and CapCut.</li>
+              <li>Coordinated online promotional campaigns to enhance brand visibility and delivery sales and analyze the performance and profitability of online order promotions across delivery platforms.</li>
+              <li>Designing Chinese marketing content, ads, video shooting and Chinese poster to social media eg: Rednote, FB, Ins, TikTok.</li>
+              <li>Supported Facebook Ads management and investigating social media marketing activities.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-section>
+        <button class="section-toggle" type="button" aria-expanded="true">
+          <span class="section-number">04</span>
+          <span class="section-title">Customer Service &amp; Software Solutions</span>
+          <span class="toggle-symbol">−</span>
+        </button>
+
+        <div class="section-body">
+          <div class="section-body-inner">
+            <ul>
+              <li>Develop excellent front-line customer services, identified issues, analysed information and provided solutions to problems while increasing clients satisfactions.</li>
+              <li>Conducting a satisfaction survey monthly to receive feedback and issues faced by clients to improve the software and to reach clients satisfaction.</li>
+              <li>Develop training materials and operational workflows for software, creating 10+ presentation slides for existing users on how to use the software features, how the software can provide them an effective solution and improve their workflow efficiency by 75%.</li>
+              <li>Assisting clients in pre-application house mortgage documents and providing professional consultancy to increase the mortgage approval rate.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-section>
+        <button class="section-toggle" type="button" aria-expanded="true">
+          <span class="section-number">05</span>
+          <span class="section-title">Experience &amp; Skills</span>
+          <span class="toggle-symbol">−</span>
+        </button>
+
+        <div class="section-body">
+          <div class="section-body-inner">
+            <p>
+              Experience across digital brand marketing, sales and marketing, student support, recruitment, customer service, software consultancy, and administration.
+            </p>
+
+            <div class="skill-list" aria-label="Skills">
+              <span class="skill">Communication skills</span>
+              <span class="skill">Independent &amp; Motivated</span>
+              <span class="skill">Teamwork</span>
+              <span class="skill">Adaptable</span>
+              <span class="skill">Microsoft Office</span>
+              <span class="skill">Canva</span>
+              <span class="skill">English — C1</span>
+              <span class="skill">Mandarin</span>
+              <span class="skill">Malay</span>
+              <span class="skill">Cantonese</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span>CHAN JING BOON</span>
+    <span>2026 · Built with the AI Badge</span>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const collapseToggle = document.getElementById("collapseToggle");
+    const sections = [...document.querySelectorAll("[data-section]")];
+
+    themeToggle.addEventListener("click", () => {
+      root.classList.toggle("light");
+      const isLight = root.classList.contains("light");
+
+      try {
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+      } catch (e) {}
+
+      themeToggle.setAttribute(
+        "title",
+        isLight ? "Toggle dark mode" : "Toggle light mode"
+      );
+      themeToggle.setAttribute(
+        "aria-label",
+        isLight ? "Toggle dark mode" : "Toggle light mode"
+      );
+    });
+
+    sections.forEach((section) => {
+      const button = section.querySelector(".section-toggle");
+      const symbol = section.querySelector(".toggle-symbol");
+
+      button.addEventListener("click", () => {
+        const collapsed = section.classList.toggle("collapsed");
+        button.setAttribute("aria-expanded", String(!collapsed));
+        symbol.textContent = collapsed ? "+" : "−";
+      });
+    });
+
+    collapseToggle.addEventListener("click", () => {
+      const allCollapsed = sections.every(section =>
+        section.classList.contains("collapsed")
+      );
+
+      sections.forEach((section) => {
+        const button = section.querySelector(".section-toggle");
+        const symbol = section.querySelector(".toggle-symbol");
+
+        section.classList.toggle("collapsed", !allCollapsed);
+        button.setAttribute("aria-expanded", String(allCollapsed));
+        symbol.textContent = allCollapsed ? "−" : "+";
+      });
+
+      collapseToggle.setAttribute("aria-pressed", String(!allCollapsed));
+      collapseToggle.setAttribute(
+        "title",
+        allCollapsed ? "Collapse all sections" : "Expand all sections"
+      );
+      collapseToggle.setAttribute(
+        "aria-label",
+        allCollapsed ? "Collapse all sections" : "Expand all sections"
+      );
+    });
+  </script>
+</body>
+</html>
